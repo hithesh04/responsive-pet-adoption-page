@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Adopt A Pet</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pets">Pets</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" style="background-image: url('./assets/home.jpg');">
+            <div class="home-content">
+                <h1>Welcome to Adopt A Pet</h1>
+                <p>Your furry friend awaits...</p>
+                <button id="ktt">Say Hello</button>
+            </div>
+        
+           
+        </section>
+        <section id="pets">
+            <h1>Meet Our Pets</h1>
+            <div class="pets-content">
+                <div class="pet-item">
+                    <img src="./assets/gol.webp" alt="Pet 1">
+                    <h2>Fluffy</h2>
+                    <p>Age: 2 years <br> Breed: Golden Retriever</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/siam.jpg" alt="Pet 2">
+                    <h2>Whiskers</h2>
+                    <p>Age: 1 year <br> Breed: Siamese Cat</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/lab.jpg" alt="Pet 3">
+                    <h2>Buddy</h2>
+                    <p>Age: 3 years <br> Breed: Labrador Retriever</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/pers.jpg" alt="Pet 4">
+                    <h2>Mittens</h2>
+                    <p>Age: 2 years <br> Breed: Persian Cat</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/ger.png" alt="Pet 5">
+                    <h2>Rex</h2>
+                    <p>Age: 4 years <br> Breed: German Shepherd</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/gol.webp" alt="Pet 1">
+                    <h2>Fluffy</h2>
+                    <p>Age: 2 years <br> Breed: Golden Retriever</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/siam.jpg" alt="Pet 2">
+                    <h2>Whiskers</h2>
+                    <p>Age: 1 year <br> Breed: Siamese Cat</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/lab.jpg" alt="Pet 3">
+                    <h2>Buddy</h2>
+                    <p>Age: 3 years <br> Breed: Labrador Retriever</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/pers.jpg" alt="Pet 4">
+                    <h2>Mittens</h2>
+                    <p>Age: 2 years <br> Breed: Persian Cat</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                <div class="pet-item">
+                    <img src="./assets/ger.png" alt="Pet 5">
+                    <h2>Rex</h2>
+                    <p>Age: 4 years <br> Breed: German Shepherd</p>
+                    <button id="kt">Adopt Me</button>
+                </div>
+                
+            </div>
+        </section>
+        <section id="adopt">
+            <h1>Adopt a Pet</h1>
+            <div class="questions">
+                <h3>Potential Adoption Questions:</h3>
+                <ol>
+                    <li><strong>Pet Compatibility:</strong> What type of activities do you enjoy, and how do you see your new pet fitting into your lifestyle?</li>
+                    <li><strong>Pet Preferences:</strong> Are you looking for a specific breed or type of pet, and why does this breed appeal to you?</li>
+                    <li><strong>Home Environment:</strong> Could you describe your living situation? Do you have a spacious backyard, or are you in a cozy apartment?</li>
+                    <li><strong>Previous Pet Experience:</strong> Have you had pets before? If so, what did you learn from those experiences?</li>
+                    <li><strong>Family Dynamics:</strong> Do you have children or other pets at home? How do you envision your new pet fitting into your family dynamic?</li>
+                    <li><strong>Training and Socialization:</strong> Are you prepared to invest time in training and socializing your new pet?</li>
+                    <li><strong>Health and Well-being:</strong> How do you plan to ensure your pet stays healthy and happy?</li>
+                    <li><strong>Support System:</strong> Do you have a support system or resources in place for emergencies or unexpected situations?</li>
+                    <li><strong>Personal Connection:</strong> What drew you to this particular pet? Is there a special quality or trait that resonates with you?</li>
+                </ol>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pet">Pet Name</label>
+                    <input type="text" id="pet" name="pet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Why do you want to adopt?</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+        <section id="reviews">
+            <h1>User Reviews</h1><br>
+            <div class="reviews-content">
+                <div class="review-item">
+                    <img src="./assets/re1.jpg" alt="Reviewer 1">
+                    <p>"Adopting Fluffy was the best decision ever!" - John Doe</p>
+                     
+                </div>
+                <div class="review-item">
+                    <img src="./assets/re2.webp" alt="Reviewer 2" id="img">
+                    <p>"Whiskers has brought so much joy to our home." - Jane Smith</p>
+                    
+                </div>
+                <div class="review-item">
+                    <img src="./assets/re3.webp" alt="Reviewer 3">
+                    <p>"Rex is the perfect companion for our family." - Emily Johnson</p>
+                </div>
+                <div class="review-item">
+                    <img src="./assets/re4.webp" alt="Reviewer 4">
+                    <p>"Luna is adorable and playful!" <br>- Michael Brown</p>
+                   
+                </div>
+               
+                <div class="review-item">
+                   
+                    <img src="./assets/re1.jpg" alt="Reviewer 1">
+                    <p>"Adopting Fluffy was the best decision ever!" - John Doe</p>
+                     
+                </div>
+                <div class="review-item">
+                    <img src="./assets/re2.webp" alt="Reviewer 2" id="img">
+                    <p>"Whiskers has brought so much joy to our home." - Jane Smith</p>
+                    
+                </div>
+                <div class="review-item">
+                    <img src="./assets/re3.webp" alt="Reviewer 3">
+                    <p>"Rex is the perfect companion for our family." - Emily Johnson</p>
+                </div>
+                <div class="review-item">
+                    <img src="./assets/re4.webp" alt="Reviewer 4">
+                    <p>"Luna is adorable and playful!" <br>- Michael Brown</p>
+                </div>
+                <div class="review-item">
+                   
+                    <img src="./assets/user.png" alt="Reviewer 1">
+                   <br>
+                    <div class="form-group">
+                        
+                        <label for="message">Enter Your review here!!!</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="ktt">Send Message</button>
+                     
+                </div>
+                
+            </div>
+        </section>
+        <section id="contact">
+          
+            <h1>Contact Us</h1>
+            <p>Feel free to reach out to us with any questions or inquiries!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+                    
+            <div class="contact-details">
+                <p><strong>Address:</strong> 123 Pet Street, Cityville, Country</p>
+                <p><strong>Email:</strong> info@adoptapet.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            </div>
+            <p>&copy; 2024 Adopt A Pet. All rights reserved.</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+

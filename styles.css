@@ -1,0 +1,255 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    color: black;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.nav-links a:hover {
+    color: black;
+    text-decoration: underline;
+    text-shadow: #333;
+    
+    font-size: 1.2rem;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Main content styling */
+main {
+    padding-top: 70px;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#home {
+    background-image: url('./assets/home.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+}
+
+.home-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+#ktt{
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#ktt:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+.pets-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.pet-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pet-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#kt{
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#kt:hover{
+    cursor: pointer;
+    background-color: #555;
+}
+
+.adopt-form,
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.adopt-form label,
+.contact-form label {
+    font-weight: bold;
+}
+
+.adopt-form input,
+.adopt-form textarea,
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.adopt-form button,
+.contact-form button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adopt-form button:hover,
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.reviews-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.review-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.review-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px);
+}
+.review-item #form-group{
+    display: flex;
+}
+.review-item p {
+    margin-top: 40px;
+    font-style: italic;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        color: black;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 1rem 0;
+        color: black;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    display: flex;
+}
+
+/* Additional styling for contact section */
+#contact {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+#contact p{
+    text-align: center;
+}
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
